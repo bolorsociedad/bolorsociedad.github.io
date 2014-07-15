@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Progresser</title>
+<link href="style.css" type="text/css" rel="stylesheet" />
+<link href="progresser/progresser.css" type="text/css" rel="stylesheet" />
+
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="progresser/Progresser.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div class="container">
+<h1>Progresser</h1>
+<i>Progresser</i> is a minimalist progress bar made in JavaScript. This is a demo of a page that uses Progresser.
+
+<div class="controllers">
+<div class="button" id="b1"><div class="triangle"></div></div><div class="description">Progresser.<span>start()</span> – Shows the progress bar</div>
+<div style="clear: both; margin-bottom: 20px;"></div>
+<div id="b2" class="button"><div class="triangle"></div></div><div class="description">Progresser.<span>set(0.75)</span> – Sets a percentage</div>
+
+<div style="clear: both; margin-bottom: 20px;"></div>
+<div id="b3" class="button"><div class="triangle"></div></div><div class="description">Progresser.<span>inc()</span> – Increments by a little.</div>
+
+<div style="clear: both; margin-bottom: 20px;"></div>
+<div id="b4" class="button"><div class="triangle"></div></div><div class="description">Progresser.<span>done()</span> – Completes the progress.</div>
+
+
+
+</div>
+
+<div style="clear: both;"></div>
+<div class="download">Download Progresser</div>
+<div class="clear: both"></div>
+<p><i>Progresser has been inspired by <a href="http://ricostacruz.com/nprogress/" target="_blank">NProgress.js</a></i></p>
+
+</div>
+<script>
+Progresser = new Progresser();
+    $("#b1").click(function() { Progresser.start(); });
+    $("#b2").click(function() { Progresser.set(0.75); });
+    $("#b3").click(function() { Progresser.inc(); });
+    $("#b4").click(function() { Progresser.done(); });
+
+</script>
+</body>
+</html>
