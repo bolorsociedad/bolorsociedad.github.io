@@ -31,6 +31,10 @@
     <!-- Google Web Fonts  -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,300,500,600,700">
 
+    <!-- Syntax Highlighter  -->
+    <link rel="stylesheet" type="text/css" href="css/syntax/shCore.css">
+    <link rel="stylesheet" type="text/css" href="css/syntax/shThemeDefault.css">
+
 
     <!-- HTML5 shiv and Respond.js support IE8 or Older for HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -60,38 +64,38 @@
 
 
 
-                 <!-- About Me (Left Sidebar) Start -->
-                 <div class="col-md-3">
-                   <div class="about-fixed">
+                <!-- About Me (Left Sidebar) Start -->
+                <div class="col-md-3">
+                  <div class="about-fixed">
 
-                     <div class="my-pic">
-                        <a href="index.html"><img src="images/pic/my-pic.png" alt=""></a>
-                        <!--<a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>-->
+                    <div class="my-pic">
+                       <a href="index.html"><img src="images/pic/my-pic.png" alt=""></a>
+                       <!--<a href="javascript:void(0)" class="collapsed" data-target="#menu" data-toggle="collapse"><i class="icon-menu menu"></i></a>-->
 
-                        </div>
+                       </div>
 
 
 
-                      <div class="my-detail">
-                          <div id="menu">
-                            <ul class="menu-link">
-                                <li><a href="index.html">About</a></li>
-                                <li><a href="cv.html">CV</a></li>
-                                <li><a href="talks.html">Talks</a></li>
-                                <li><a href="code.html">Code</a></li>
-                             </ul>
-                          </div>
-                          <div class="white-spacing">
+                     <div class="my-detail">
+                         <div id="menu">
+                             <ul class="menu-link">
+                                 <li><a href="index.html">About</a></li>
+                                 <li><a href="cv.html">CV</a></li>
+                                 <li><a href="talks.html">Talks</a></li>
+                                 <li><a href="code.html">Code</a></li>
+                              </ul>
+                         </div>
+                         <div class="white-spacing">
 
-                              <h1>Imanol Perez Arribas</h1>
-                              <span>PhD in Mathematics student at the University of Oxford</span>
-                          </div>
+                             <h1>Imanol Perez Arribas</h1>
+                             <span>PhD in Mathematics student at the University of Oxford</span>
+                         </div>
 
-                         <ul class="social-icon">
-                           <li><a href="https://www.maths.ox.ac.uk/people/imanol.perez" target="_blank" class="web"><i class="fa fa-globe"></i></a></li>
-                           <li><a href="https://www.linkedin.com/in/imanolperez/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                           <li><a href="https://github.com/imanolperez" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
-                          </ul>
+                        <ul class="social-icon">
+                          <li><a href="https://www.maths.ox.ac.uk/people/imanol.perez" target="_blank" class="web"><i class="fa fa-globe"></i></a></li>
+                          <li><a href="https://www.linkedin.com/in/imanolperez/" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                          <li><a href="https://github.com/imanolperez" target="_blank" class="github"><i class="fa fa-github"></i></a></li>
+                         </ul>
 
                     </div>
                   </div>
@@ -109,31 +113,36 @@
 
 
                             <div class="sub-title">
-                           		<h2>About</h2>
-                                <a href="mailto:imanol.perez@maths.ox.ac.uk"><i class="icon-envelope"></i></a>
+                           		<a href="code.html" title="Back"><h2>Back</h2></a>
                              </div>
 
 
                             <div class="col-md-12 content-page">
+                              <div class="col-md-12 blog-post">
 
 
-                                <!-- Blog Post Start -->
-                                <div class="col-md-12 blog-post">
-                                    <p>I am a PhD in Mathematics student at the University of Oxford and a member of
-                                        <a target="_blank" href="http://www.keble.ox.ac.uk/">Keble College</a>.</p>
+                                <!-- Post Headline Start -->
+                                <div class="post-title">
+                                    <h1>Computing the signature of a drawn path</h1>
+                                   </div>
+                                   <!-- Post Headline End -->
 
-                                    <p>My research interests include stochastic analysis, rough path theory, machine learning and finance.
-                                        Currently, I am working on the challenge of extracting hidden patterns from a noisy cloud of points data in an unsupervised manner. Using tools
-                                        from random matrix theory and rough path theory, our objective is to be able to identify nonlinear relationships in a cloud of streams of data
-                                        that are unlikely to be due to randomness. I am also interested in its multidisciplinary applications.</p>
+
+                                   <p>The signature of a path is an infinite sequence belonging to a certain tensor algebra (see
+                                       <a target="_blank" href="https://arxiv.org/abs/1405.4537">Lyons, Terry. <i>Rough paths, Signatures and the modelling
+                                       of functions on streams</i></a>).
+                                       The truncated signature, obtained when truncating the sequence at a certain order, is a good summary of
+                                       the original path and over the last few years it has shown to have interesting applications to machine
+                                       learning.</p>
+
+                                    <p>The following app allows the user to draw a path with the mouse, and immediately compute its truncated signature
+                                         up to a certain order using <a target="_blank" href="http://esig.readthedocs.io/">eSig</a>.</p>
+
+                                    <iframe style="border: none; width: 820px; height: 500px; overflow: hidden;" scrolling="no" src="http://imanolperez.pythonanywhere.com/"></iframe>
+
 
 
                                 </div>
-                                <!-- Blog Post End -->
-
-
-
-
                              </div>
 
                          </div>
@@ -141,6 +150,7 @@
 
 
                          </div>
+
 
 
 
