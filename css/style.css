@@ -322,7 +322,8 @@ button {
 
 .about-fixed {
     position: fixed;
-    width: 20.8%;
+    width: 18.8%;
+    /*max-width: 300px;*/
 }
 
 .my-pic {
@@ -1187,11 +1188,21 @@ blockquote {
 
 /* Responsive */
 
+@media only screen and (min-width: 1199px) {
+
+    .about-fixed {
+      max-width: 300px;
+    }
+}
+
+
 @media only screen and (max-width: 1199px) {
     .endpage-box {
        display: none !important;
     }
+
 }
+
 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -1233,6 +1244,8 @@ blockquote {
        font-size: 14px;
        width: 100px;
     }
+
+
 }
 
 
@@ -1816,4 +1829,9 @@ blockquote {
 
 .uipasta-credit a:hover {
     color: #333333;
+}
+
+
+.container {
+  width: 80%;
 }
