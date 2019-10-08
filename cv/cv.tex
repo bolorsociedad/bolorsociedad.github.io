@@ -1,0 +1,165 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{casual}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\usepackage[utf8]{inputenc}
+
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Imanol}{Pérez Arribas}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\title{ResumÃ© title}                               % optional, remove / comment the line if not wanted   
+\address{Imanol Pérez Arribas}{imanol.perez@maths.ox.ac.uk}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+%\email{imanol.perez@maths.ox.ac.uk}                               % optional, remove / comment the line if not wanted
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace{-1cm}
+\section{Personal Information}
+\cvitem{Name}{Imanol}
+\cvitem{Surname}{Pérez Arribas}
+\cvitem{Birth date}{24/01/1994}
+\cvitem{Country}{Spain}
+\cvitem{Email}{imanol.perez@maths.ox.ac.uk}
+\cvitem{Website}{http://www.maths.ox.ac.uk/people/imanol.perez}
+\cvitem{Git}{https://git.maths.ox.ac.uk/u/perez}
+\cvitem{LinkedIn}{https://www.linkedin.com/in/imanolperez}
+
+
+\section{Education}
+\cvitem{2016--Now}{PhD in Mathematics at Oxford University.}
+\cvitem{2012--2016}{Bachelor of Science in Mathematics at the University of the Basque Country in Spain.\newline {\scriptsize  Average grade: 9.61/10.}}
+\cvitem{2014--Now}{Second year Physics student at Universidad Nacional de Educación a Distancia (UNED) -- currently on hold.}
+
+
+\section{Work experience}
+\cvitem{Oct 2019 -- Now}{Quantitative Researcher at J.P. Morgan in London, with the objective of exploring potential applications of my PhD to projects at the firm.}
+\cvitem{Jul 2019 -- Sep 2019}{Quantitative Researcher Intern at Jump Trading.}
+\cvitem{Jan 2018 -- Jun 2019}{Quantitative Researcher at J.P. Morgan in London, with the objective of exploring potential applications of my PhD to projects at the firm.}
+\cvitem{Jul 2017 -- Sep 2017}{Quantitative Research Associate internship at J.P. Morgan in London in the Equities Derivatives team.}
+%\cvitem{Mar 2016 -- Aug 2016}{Research internship at the \textit{Basque Center for Applied Mathematics} (BCAM), under the project \textit{Data Analytics for Financial Services}, whose main objective was the forecast of future behaviour of a certain commodity for a company of the energy sector.}
+%\cvitem{Aug 2014 -- Aug 2016}{Co-founder of the startup Cooplo, a social network whose objective is to recommend events to users based on their tastes and mood. I was in charge of the technical side of the startup, which involved both coding and building the algorithm using machine learning.}
+%\cvitem{Jun 2015 -- Aug 2015}{Summer research internship at the \textit{Basque Center for Applied Mathematics} (BCAM), on Analysis and PDEs.}
+
+
+\section{Scholarships}
+
+\cvitem{2017}{Extraordinary Award for my Bachelor in Mathematics. Awarded by the University of the Basque Country.}
+\cvitem{2016}{Full scholarship offered by the bank La Caixa for graduate studies in Europe.}
+\cvitem{2016}{Scholarship from the University of Oxford that covers University and College Fees.}
+
+\pagebreak
+\section{Programming languages}
+
+\cvitem{}{
+\begin{itemize}%
+\item Python
+\item R
+\item C++
+\item MATLAB
+\end{itemize}
+}
+
+\section{Publications}
+
+\cvitem{2019}{\textbf{Nonparametric pricing and hedging of exotic derivatives}.\newline
+\textit{Terry Lyons, Sina Nejad and Imanol Perez Arribas.}\newline
+{arXiv:1905.00711}}
+
+
+\cvitem{2019}{\textbf{Deep Signatures}.\newline
+\textit{Patric Bonnier, Patrick Kidger, Imanol Perez Arribas, Cristopher Salvi and Terry
+Lyons.}\newline
+NeurIPS 2019}
+
+\cvitem{2019}{\textbf{Optimal execution with rough path signatures}.\newline
+\textit{Jasdeep Kalsi, Terry Lyons and Imanol Perez Arribas.}\newline
+arXiv:1905.00728}
+
+\cvitem{2019}{\textbf{Model-free pricing and hedging in discrete time using rough path signatures}.\newline
+\textit{Terry Lyons, Sina Nejad and Imanol Perez Arribas.}\newline
+arXiv:1905.01720}
+
+
+\cvitem{2018}{\textbf{Derivatives pricing using signature payoffs}.\newline
+\textit{Imanol Perez Arribas.}\newline
+{arXiv:1809.09466}}
+
+
+\cvitem{2018}{\textbf{Labelling as an unsupervised learning problem}.\newline
+\textit{Terry Lyons and Imanol Perez Arribas.}\newline
+{arXiv:1805.03911}}
+
+
+
+\cvitem{2017}{\textbf{A signature-based machine learning model for bipolar disorder and borderline personality disorder}.\newline
+\textit{Imanol Perez Arribas, Guy M. Goodwin, John R. Geddes, Terry Lyons and Kate
+E.A. Saunders.}\newline
+{Translational Psychiatry, 8(1), p.274}}
+
+\section{Teaching}
+
+\cvitem{Michaelmas Term 2017}{
+\begin{itemize}%
+\item \textit{Martingales Through Measure Theory} (B8.1) at the University of Oxford.
+\item \textit{Measure Theory \& Probability} (PDE/CDT) at the University of Oxford.
+\item \textit{Numerical Solutions of Differential Equations} (B6.1) at the University of Oxford.
+\end{itemize}
+}
+
+
+
+%\section{Talks}
+%
+%\cvitem{May 2017}{\textit{Using a signature-based machine learning model to analyse a psychiatric stream of data}, at the 7th Annual ERC Berlin-Oxford Young Researchers Meeting on Applied Stochastic Analysis in Berlin.}
+%\cvitem{May 2017}{\textit{Using signatures and rough path theory to analyse a psychiatric data stream}, at SIAM-IMA Annual Conference 2017 at Cambridge.}
+%\cvitem{July 2016}{\textit{Different approaches to existence and uniqueness of weak solutions of elliptic PDEs}, at BCAM.}
+%\cvitem{March 2016}{\textit{Fixed Point Theorems and applications}, at the VI Functional Analysis Workshop in Cáceres.}
+%
+
+
+
+
+%\clearpage\end{CJK*}                              % if you are typesetting your resume in Chinese using CJK; the \clearpage is required for fancyhdr to work correctly with CJK, though it kills the page numbering by making \lastpage undefined
+\end{document}
+
+
+%% end of file `template.tex'.
